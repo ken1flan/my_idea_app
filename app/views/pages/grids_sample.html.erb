@@ -1,0 +1,54 @@
+<h1>Bootstrap grid sample</h1>
+
+<% color_classes = %w(success info warning danger) %>
+<div class="container">
+  <div class="row">
+    <% (1..12).each do |i| %>
+      <% color_class = color_classes.sample %>
+      <div class="col-md-1 bg-<%= color_class %>">
+        <p class="text-<%= color_class %>">aaa</p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% (1..6).each do |i| %>
+      <% color_class = color_classes.sample %>
+      <div class="col-md-2 bg-<%= color_class %>">
+        <span class="text-<%= color_class %>">aaa</span>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% (1..4).each do |i| %>
+      <% color_class = color_classes.sample %>
+      <div class="col-md-3 bg-<%= color_class %>">
+        <span class="text-<%= color_class %>">aaa</span>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% (1..2).each do |i| %>
+      <% color_class = color_classes.sample %>
+      <div class="col-md-6 bg-<%= color_class %>">
+        <span class="text-<%= color_class %>">aaa</span>
+      </div>
+    <% end %>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <input type="button" value="no class">
+    </div>
+    <div class="col-md-3">
+      <input type="button" class="btn btn-default" value="btn btn-default">
+    </div>
+    <div class="col-md-3">
+      <input type="text" value="no class">
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" value="form-control">
+    </div>
+  </div>
+</div>

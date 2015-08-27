@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :comments
   get 'pages/info'
+  get 'pages/grids_sample'
 
   root to: redirect('/ideas')
   resources :ideas
